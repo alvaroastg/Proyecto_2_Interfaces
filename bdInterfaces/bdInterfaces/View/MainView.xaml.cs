@@ -8,6 +8,7 @@ public partial class MainView : Window
     public MainView()
     {
         InitializeComponent();
+        // para que salga la barra de menu de abajo y no la tape al maximizar pantalla
     }
 
     private void MainView_OnMouseDown(object sender, MouseButtonEventArgs e)
@@ -15,13 +16,10 @@ public partial class MainView : Window
         if (e.LeftButton == MouseButtonState.Pressed) DragMove();
     }
 
-    private void BtnMinimizar_OnClick(object sender, RoutedEventArgs e)
+    private void Volver_OnClick(object sender, RoutedEventArgs e)
     {
-        WindowState = WindowState.Minimized;
-    }
-
-    private void BtnCerrar_OnClick(object sender, RoutedEventArgs e)
-    {
-        Application.Current.Shutdown();
+        LoginView main = new LoginView();
+        this.Close();
+        main.Show();
     }
 }

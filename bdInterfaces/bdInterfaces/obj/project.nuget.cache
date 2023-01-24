@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5DUfKKeMEnTrz9HTF9Bh/zyeAfvjF2lY2IfZCHqQ+3peaIKJXhC1ld98nlRc4ndCqZR+yxdwBS9rFx5koZAt9w==",
+  "dgSpecHash": "GzY7bGgqEml5hFPSoU1WexiUt5goS5F8QpObtB/Kq/Fq7ft1iMri7hBBnnGs2+hJ8DYY89U7GfgLBzg6R2HrgQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\josec\\Documents\\Git\\Proyecto_2_Interfaces\\bdInterfaces\\bdInterfaces\\bdInterfaces.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\josec\\.nuget\\packages\\fontawesome.sharp\\6.2.1\\fontawesome.sharp.6.2.1.nupkg.sha512",
     "C:\\Users\\josec\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\josec\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\josec\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
