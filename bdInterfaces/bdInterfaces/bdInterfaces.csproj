@@ -7,4 +7,17 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="MySql.Data" Version="8.0.32" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Imagenes\musica.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Imagenes\bd.png" />
+      <Resource Include="Imagenes\bd.png" />
+    </ItemGroup>
+
 </Project>

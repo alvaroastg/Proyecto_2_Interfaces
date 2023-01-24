@@ -1,0 +1,71 @@
+﻿<Window x:Class="bdInterfaces.View.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:bdInterfaces.View"
+        mc:Ignorable="d"
+        Title="MainView" Height="450" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="MainView_OnMouseDown"
+        Background="Transparent"
+        AllowsTransparency="True">
+    
+    <Border CornerRadius="20"
+            Background="{StaticResource Negro}"
+            BorderBrush="{StaticResource Negro}"
+            BorderThickness="3">
+
+        <Grid>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- Navegation Menu -->
+                <Border Grid.Column="0"
+                        CornerRadius="20,0,0,20"
+                        Background="{StaticResource Verde}">
+                    
+                    <StackPanel>
+                        
+                        <!-- Logo -->
+                        
+                        <StackPanel Orientation="Horizontal"
+                                    Height="35"
+                                    Margin="10, 25, 0, 40">
+                            <Image Source="../Imagenes/bd.png"
+                                   VerticalAlignment="Bottom"
+                                   Margin="0,0,0,5"></Image>
+                            <TextBlock Text="NORTHWIND"
+                                       Foreground="{StaticResource Negro}"
+                                       FontSize="23"
+                                       FontWeight="Bold"
+                                       FontFamily="MontSerrat"
+                                       VerticalAlignment="Bottom"
+                                       Padding="0,0,0,0"></TextBlock>
+                        </StackPanel>
+                        
+                    </StackPanel>
+                    
+                </Border>
+                
+                <!-- Main Section -->
+                <Border Grid.Column="1"
+                        CornerRadius="0,20,20,0"
+                        Background="{StaticResource Negro}">
+                    
+                    
+                    
+                </Border>
+                
+            </Grid>
+            
+        </Grid>
+
+    </Border>
+</Window>
