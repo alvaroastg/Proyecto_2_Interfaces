@@ -60,33 +60,41 @@
 
                             <!-- Menu Botones -->
 
-                            <RadioButton Style="{StaticResource BotMenu}"
+                            <RadioButton x:Name="RbtInicio" 
+                                         Style="{StaticResource BotMenu}"
                                          Tag="{StaticResource Negro}"
-                                         IsChecked="True">
+                                         IsChecked="True"
+                                         Click="RbtInicio_OnClick">
                                 <StackPanel Orientation="Horizontal">
                                     <fo:IconImage Icon="Home" Style="{StaticResource MenuBotonIcono}" />
                                     <TextBlock Text="INICIO" Style="{StaticResource MenuBotonText}"></TextBlock>
                                 </StackPanel>
                             </RadioButton>
 
-                            <RadioButton Style="{StaticResource BotMenu}"
-                                         Tag="{StaticResource Negro}">
+                            <RadioButton x:Name="RbtCrud" 
+                                         Style="{StaticResource BotMenu}"
+                                         Tag="{StaticResource Negro}"
+                                         Click="RbtCrud_OnClick">
                                 <StackPanel Orientation="Horizontal">
                                     <fo:IconImage Icon="Pen" Style="{StaticResource MenuBotonIcono}" />
                                     <TextBlock Text="CRUD" Style="{StaticResource MenuBotonText}"></TextBlock>
                                 </StackPanel>
                             </RadioButton>
 
-                            <RadioButton Style="{StaticResource BotMenu}"
-                                         Tag="{StaticResource Negro}">
+                            <RadioButton x:Name="RbtConsulta" 
+                                         Style="{StaticResource BotMenu}"
+                                         Tag="{StaticResource Negro}"
+                                         Click="RbtConsulta_OnClick">
                                 <StackPanel Orientation="Horizontal">
                                     <fo:IconImage Icon="List" Style="{StaticResource MenuBotonIcono}" />
                                     <TextBlock Text="CONSULTAS" Style="{StaticResource MenuBotonText}"></TextBlock>
                                 </StackPanel>
                             </RadioButton>
 
-                            <RadioButton Style="{StaticResource BotMenu}"
-                                         Tag="{StaticResource Negro}">
+                            <RadioButton x:Name="RbtAcercaDe" 
+                                         Style="{StaticResource BotMenu}"
+                                         Tag="{StaticResource Negro}"
+                                         Click="RbtAcercaDe_OnClick">
                                 <StackPanel Orientation="Horizontal">
                                     <fo:IconImage Icon="InfoCircle" Style="{StaticResource MenuBotonIcono}" />
                                     <TextBlock Text="ACERCA DE" Style="{StaticResource MenuBotonText}"></TextBlock>
@@ -120,7 +128,6 @@
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="25" />
-                            <RowDefinition Height="35" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
 
@@ -129,9 +136,40 @@
                                     Orientation="Horizontal"
                                     FlowDirection="RightToLeft"
                                     Background="Transparent"
-                                    Margin="0,0,5,0">
+                                    Margin="0,5,0,0">
+                            
+                            <Button x:Name="BtnCerrar"
+                                    Content="X"
+                                    FontWeight="Bold"
+                                    Foreground="White"
+                                    BorderThickness="0"
+                                    Margin="5,0,0,0"
+                                    Click="BtnCerrar_OnClick"
+                                    Style="{StaticResource BotColorVerde}"
+                                    Template="{StaticResource BotRedondo}" />
+                            
+                            <Button x:Name="BtnMinimizar"
+                                    Content="-"
+                                    Foreground="White"
+                                    FontWeight="Bold"
+                                    BorderThickness="0"
+                                    Margin="10,0,0,0"
+                                    Click="BtnMinimizar_OnClick"
+                                    Style="{StaticResource BotColorVerde}"
+                                    Template="{StaticResource BotRedondo}" />
+                            
                         </StackPanel>
 
+                        <!-- CONTENIDO INICIO -->
+                        <Frame x:Name="Menus" 
+                               Grid.Row="1"
+                               Margin="10,10,10,10"
+                               Width="auto"
+                               Height="auto"
+                               Source="../Pages/Inicio.xaml"
+                               NavigationUIVisibility="Hidden"></Frame>
+                        
+                        
                     </Grid>
 
                 </Border>
