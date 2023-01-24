@@ -97,11 +97,14 @@
                         
                         
                         <StackPanel Grid.Row="1">
-                            <Button x:Name="Volver" Width="30"
-                                    Height="30" 
+                            <Button x:Name="Volver" Width="25"
                                     HorizontalAlignment="Left"
                                     Margin="40,0,0,0"
-                                    Click="Volver_OnClick"></Button>
+                                    Click="Volver_OnClick"
+                                    BorderThickness="0"
+                                    Style="{StaticResource BotIcono}">
+                                <fo:IconImage Icon="SignOut" Foreground="{StaticResource Negro}"/>
+                            </Button>
                         </StackPanel>
                     </Grid>
 
