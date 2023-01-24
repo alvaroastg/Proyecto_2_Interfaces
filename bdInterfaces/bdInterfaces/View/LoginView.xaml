@@ -31,7 +31,6 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Grid.Column="0"
-                           Text="LOGIN"
                            Foreground="White"
                            Padding="20 0 0 0"
                            VerticalAlignment="Center"

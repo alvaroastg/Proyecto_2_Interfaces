@@ -3,68 +3,138 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:fo="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         xmlns:local="clr-namespace:bdInterfaces.View"
         mc:Ignorable="d"
         Title="MainView" Height="450" Width="800"
         WindowStyle="None"
-        ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        MouseDown="MainView_OnMouseDown"
         Background="Transparent"
+        ResizeMode="NoResize"
+        MouseDown="MainView_OnMouseDown"
         AllowsTransparency="True">
-    
+
     <Border CornerRadius="20"
             Background="{StaticResource Negro}"
             BorderBrush="{StaticResource Negro}"
-            BorderThickness="3">
+            BorderThickness="5">
 
         <Grid>
-            
+
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200"/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                
+
                 <!-- Navegation Menu -->
                 <Border Grid.Column="0"
                         CornerRadius="20,0,0,20"
                         Background="{StaticResource Verde}">
-                    
-                    <StackPanel>
-                        
-                        <!-- Logo -->
-                        
-                        <StackPanel Orientation="Horizontal"
-                                    Height="35"
-                                    Margin="10, 25, 0, 40">
-                            <Image Source="../Imagenes/bd.png"
-                                   VerticalAlignment="Bottom"
-                                   Margin="0,0,0,5"></Image>
-                            <TextBlock Text="NORTHWIND"
-                                       Foreground="{StaticResource Negro}"
-                                       FontSize="23"
-                                       FontWeight="Bold"
-                                       FontFamily="MontSerrat"
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="400"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="0">
+
+                            <!-- Logo -->
+
+                            <StackPanel Orientation="Horizontal"
+                                        Height="35"
+                                        Margin="10, 25, 0, 40">
+                                <Image Source="../Imagenes/bd.png"
                                        VerticalAlignment="Bottom"
-                                       Padding="0,0,0,0"></TextBlock>
+                                       Margin="0,0,0,5">
+                                </Image>
+                                <TextBlock Text="NORTHWIND"
+                                           Foreground="{StaticResource Negro}"
+                                           FontSize="23"
+                                           FontWeight="Bold"
+                                           FontFamily="MontSerrat"
+                                           VerticalAlignment="Bottom"
+                                           Padding="0,0,0,0">
+                                </TextBlock>
+                            </StackPanel>
+
+                            <!-- Menu Botones -->
+
+                            <RadioButton Style="{StaticResource BotMenu}"
+                                         Tag="{StaticResource Negro}"
+                                         IsChecked="True">
+                                <StackPanel Orientation="Horizontal">
+                                    <fo:IconImage Icon="Home" Style="{StaticResource MenuBotonIcono}" />
+                                    <TextBlock Text="INICIO" Style="{StaticResource MenuBotonText}"></TextBlock>
+                                </StackPanel>
+                            </RadioButton>
+
+                            <RadioButton Style="{StaticResource BotMenu}"
+                                         Tag="{StaticResource Negro}">
+                                <StackPanel Orientation="Horizontal">
+                                    <fo:IconImage Icon="Pen" Style="{StaticResource MenuBotonIcono}" />
+                                    <TextBlock Text="CRUD" Style="{StaticResource MenuBotonText}"></TextBlock>
+                                </StackPanel>
+                            </RadioButton>
+
+                            <RadioButton Style="{StaticResource BotMenu}"
+                                         Tag="{StaticResource Negro}">
+                                <StackPanel Orientation="Horizontal">
+                                    <fo:IconImage Icon="List" Style="{StaticResource MenuBotonIcono}" />
+                                    <TextBlock Text="CONSULTAS" Style="{StaticResource MenuBotonText}"></TextBlock>
+                                </StackPanel>
+                            </RadioButton>
+
+                            <RadioButton Style="{StaticResource BotMenu}"
+                                         Tag="{StaticResource Negro}">
+                                <StackPanel Orientation="Horizontal">
+                                    <fo:IconImage Icon="InfoCircle" Style="{StaticResource MenuBotonIcono}" />
+                                    <TextBlock Text="ACERCA DE" Style="{StaticResource MenuBotonText}"></TextBlock>
+                                </StackPanel>
+                            </RadioButton>
+
                         </StackPanel>
                         
-                    </StackPanel>
-                    
+                        
+                        <StackPanel Grid.Row="1">
+                            <Button x:Name="Volver" Width="30"
+                                    Height="30" 
+                                    HorizontalAlignment="Left"
+                                    Margin="40,0,0,0"
+                                    Click="Volver_OnClick"></Button>
+                        </StackPanel>
+                    </Grid>
+
+
                 </Border>
-                
+
                 <!-- Main Section -->
+
                 <Border Grid.Column="1"
                         CornerRadius="0,20,20,0"
                         Background="{StaticResource Negro}">
-                    
-                    
-                    
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25" />
+                            <RowDefinition Height="35" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="0"
+                                    x:Name="pnlControlBar"
+                                    Orientation="Horizontal"
+                                    FlowDirection="RightToLeft"
+                                    Background="Transparent"
+                                    Margin="0,0,5,0">
+                        </StackPanel>
+
+                    </Grid>
+
                 </Border>
-                
+
             </Grid>
-            
+
         </Grid>
 
     </Border>

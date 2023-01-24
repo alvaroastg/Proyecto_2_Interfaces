@@ -38,3 +38,4 @@ C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\obj
 C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\obj\Debug\net6.0-windows\View\MainView.baml
 C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\obj\Debug\net6.0-windows\App.baml
 C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\obj\Debug\net6.0-windows\Recursos\Recursos.baml
+C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
