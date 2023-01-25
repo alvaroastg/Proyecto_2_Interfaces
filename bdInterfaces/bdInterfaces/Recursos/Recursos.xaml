@@ -8,6 +8,7 @@
     <Brush x:Key="VerdeClaro">#28C67F</Brush>
     <Brush x:Key="Negro">#333333</Brush>
     <Brush x:Key="Gris">#525252</Brush>
+    <Brush x:Key="Azul">#278bef</Brush>
     
 
     <!-- COLOR BOTONES -->

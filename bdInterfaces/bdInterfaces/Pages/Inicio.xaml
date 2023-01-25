@@ -11,34 +11,29 @@
       Background="{StaticResource Negro}">
     <Grid>
         
-        <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        
-        <StackPanel Grid.Row="0" Orientation="Horizontal"
-                    Margin="10,0,10,0">
-            <fo:IconImage Icon="Home"
-                          Width="22"
-                          Height="22"
-                          Foreground="{StaticResource Verde}"
-                          Margin="0,0,10,5"
-                          VerticalAlignment="Center"/>
-            <TextBlock Text="INICIO"
-                       FontSize="20"
+        <StackPanel Margin="50,10,50,10">
+            
+            <TextBlock FontSize="20"
+                       Padding="0,30,0,0"
+                       HorizontalAlignment="Center"
+                       TextWrapping="Wrap"
                        FontWeight="Bold"
                        FontFamily="MontSerrat"
-                       VerticalAlignment="Center"
-                       Foreground="{StaticResource Verde}"></TextBlock>
+                       Foreground="{StaticResource Verde}">BIENVENIDOS A LA BASE DE DATOS NORTHWIND</TextBlock>
+            
+            <Image Source="../Imagenes/crud.png"
+                   Margin="0,30,0,0"
+                   Width="300"></Image>
+            
+            <TextBlock   Padding="0,30,0,0"
+                         FontSize="15"
+                         TextWrapping="Wrap"
+                         FontFamily="MontSerrat"
+                         Foreground="LightGray">Podrás navegar por las diferentes secciones como "CRUD", "CONSULTAS" y "ACERCA DE".</TextBlock>
+
+
             
         </StackPanel>
-        
-        <TextBlock Grid.Row="1"  Padding="30,30,30,10" 
-                    FontSize="13"
-                    TextWrapping="Wrap"
-                    FontFamily="MontSerrat"
-                    Foreground="LightGray">Bienvenidos a la base de datos de 
-            Northwind. Podrás navegar por las diferentes secciones como "CRUD", "CONSULTAS" y "ACERCA DE".</TextBlock>
         
         
     </Grid>
