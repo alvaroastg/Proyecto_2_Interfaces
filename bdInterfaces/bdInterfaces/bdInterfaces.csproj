@@ -23,6 +23,8 @@
       <None Remove="Raw\ejemplo.json" />
       <None Remove="Raw\otro.json" />
       <None Remove="Raw\pru.json" />
+      <None Remove="Imagenes\crud.png" />
+      <Resource Include="Imagenes\crud.png" />
     </ItemGroup>
 
 </Project>
