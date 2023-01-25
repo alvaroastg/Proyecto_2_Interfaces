@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\josec\Documents\Git\Proyecto_2_Interfaces\bdInterfaces\bdInterfaces\App.xaml
-41978472624
-
-51330348986
-211120861403
-MainWindow.xaml;Recursos\Recursos.xaml;View\LoginView.xaml;View\MainView.xaml;
+11-2064916440
+11914018758
+12-1471101536
+218-674330877
+MainWindow.xaml;Pages\AcercaDe.xaml;Pages\Agregar.xaml;Pages\Borrar.xaml;Pages\Consultas.xaml;Pages\Crud.xaml;Pages\Inicio.xaml;Pages\Modificar.xaml;Recursos\Recursos.xaml;View\LoginView.xaml;View\MainView.xaml;
 
 False
 
