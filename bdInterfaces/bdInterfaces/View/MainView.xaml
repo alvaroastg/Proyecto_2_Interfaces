@@ -163,7 +163,7 @@
                         <!-- CONTENIDO INICIO -->
                         <Frame x:Name="Menus" 
                                Grid.Row="1"
-                               Margin="10,10,10,10"
+                               Margin="0,10,10,10"
                                Width="auto"
                                Height="auto"
                                Source="../Pages/Inicio.xaml"
