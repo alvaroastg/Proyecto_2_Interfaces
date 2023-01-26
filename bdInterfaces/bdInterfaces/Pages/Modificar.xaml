@@ -5,9 +5,94 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:bdInterfaces.Pages"
       mc:Ignorable="d"
+      Background="{StaticResource Negro}"
       Title="Modificar" Height="150" Width="400">
     <Grid>
-        <TextBlock VerticalAlignment="Center"
-                   HorizontalAlignment="Center">MODIFICAR</TextBlock>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Column="0"
+                    Grid.Row="0">
+            <TextBlock Text="Producto Antiguo"
+                       Foreground="{StaticResource Verde}"
+                       FontFamily="Montserrat"
+                       FontWeight="Bold"
+                       FontSize="13"
+                       Width="150"
+                       Margin="0,15,0,0"/>
+
+            <TextBox x:Name="TxtProductoAntiguo"
+                     Background="Transparent"
+                     Foreground="White"
+                     Margin="0,20,0,0"
+                     BorderThickness="0 0 0 1"
+                     Width="150"
+                     FontSize="13"
+                     FontFamily="Montserrat"
+                     CaretBrush="{StaticResource Verde}" />
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1"
+                    Grid.Column="0">
+            <TextBlock Text="Producto Nuevo"
+                       Margin="0,15,0,0"
+                       Foreground="{StaticResource Verde}"
+                       FontFamily="Montserrat"
+                       FontWeight="Bold"
+                       FontSize="13"
+                       Width="150"/>
+
+            <TextBox x:Name="TxtProductoNuevo"
+                     Background="Transparent"
+                     Margin="0,20,0,0"
+                     Foreground="White"
+                     BorderThickness="0 0 0 1"
+                     Width="150"
+                     FontSize="13"
+                     FontFamily="Montserrat"
+                     CaretBrush="{StaticResource Verde}" />
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1"
+                    Grid.Row="0">
+           
+                <TextBlock Text="Categoría"
+                           Margin="0,15,0,0"
+                           Foreground="{StaticResource Verde}"
+                           FontFamily="Montserrat"
+                           FontWeight="Bold"
+                           FontSize="13"
+                           Width="150"/>
+
+                <ComboBox Width="150"
+                          Height="15"
+                          Margin="0,22,0,0">
+            
+                </ComboBox>
+            </StackPanel>
+       
+        
+        <StackPanel Grid.Column="1"
+                    Grid.Row="1"
+                    VerticalAlignment="Bottom">
+            <Button x:Name="BtnAgregarPro"
+                    Margin="0,0,0,6"
+                    Content="Modificar"
+                    Foreground="{StaticResource Negro}"
+                    FontSize="15"
+                    FontFamily="Montserrat"
+                    FontWeight="Bold"
+                    Style="{StaticResource BotColorVerde}"
+                    Template="{StaticResource BotSemiRedondo}"/>
+        </StackPanel>
+        
     </Grid>
 </Page>

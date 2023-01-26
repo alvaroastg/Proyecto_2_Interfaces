@@ -5,9 +5,57 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:bdInterfaces.Pages"
       mc:Ignorable="d"
+      Background="{StaticResource Negro}"
       Title="Borrar" Height="150" Width="400">
     <Grid>
-        <TextBlock VerticalAlignment="Center"
-                   HorizontalAlignment="Center">BORRAR</TextBlock>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        
+        
+        <StackPanel Grid.Row="1"
+                    Grid.Column="0">
+            <TextBlock Text="Producto Borrar"
+                       Margin="0,15,0,0"
+                       Foreground="{StaticResource Verde}"
+                       FontFamily="Montserrat"
+                       FontWeight="Bold"
+                       FontSize="13"
+                       Width="150"/>
+
+            <TextBox x:Name="TxtProductoNuevo"
+                     Background="Transparent"
+                     Margin="0,20,0,0"
+                     Foreground="White"
+                     BorderThickness="0 0 0 1"
+                     Width="150"
+                     FontSize="13"
+                     FontFamily="Montserrat"
+                     CaretBrush="{StaticResource Verde}" />
+        </StackPanel>
+        
+        
+        <StackPanel Grid.Column="1"
+                    Grid.Row="1"
+                    VerticalAlignment="Bottom">
+            <Button x:Name="BtnBorrar"
+                    Margin="0,0,0,6"
+                    Content="Borrar"
+                    Foreground="{StaticResource Negro}"
+                    FontSize="15"
+                    FontFamily="Montserrat"
+                    FontWeight="Bold"
+                    Style="{StaticResource BotColorVerde}"
+                    Template="{StaticResource BotSemiRedondo}"/>
+        </StackPanel>
+        
     </Grid>
 </Page>

@@ -9,16 +9,8 @@
       mc:Ignorable="d"
       Title="AcercaDe" Height="450" Width="600">
     <StackPanel>
-        <StackPanel Orientation="Horizontal"
-                    Margin="10,10,10,0">
-            <fo:IconImage Icon="InfoCircle"
-                          Foreground="{StaticResource Verde}"
-                          Margin="0,0,10,5"/>
-            <TextBlock Text="ACERCA DE"
-                       FontSize="20"
-                       FontWeight="Bold"
-                       FontFamily="MontSerrat"
-                       Foreground="{StaticResource Verde}"></TextBlock>
-        </StackPanel>
+        <ComboBox Width="300">
+            
+        </ComboBox>
     </StackPanel>
 </Page>
