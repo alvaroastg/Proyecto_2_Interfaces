@@ -23,7 +23,7 @@
         
         <StackPanel Grid.Row="1"
                     Grid.Column="0">
-            <TextBlock Text="Producto Borrar"
+            <TextBlock Text="Producto"
                        Margin="0,15,0,0"
                        Foreground="{StaticResource Verde}"
                        FontFamily="Montserrat"

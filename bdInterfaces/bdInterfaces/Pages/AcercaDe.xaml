@@ -7,10 +7,34 @@
 
       xmlns:local="clr-namespace:bdInterfaces.Pages"
       mc:Ignorable="d"
+      Background="{StaticResource Negro}"
       Title="AcercaDe" Height="450" Width="600">
-    <StackPanel>
-        <ComboBox Width="300">
+    <Grid>
             
-        </ComboBox>
-    </StackPanel>
+            <StackPanel Margin="50,10,50,10">
+                
+                <Image Source="../Imagenes/acercade.png"
+                       Margin="0,30,0,0"
+                       Width="150"></Image>
+                
+                <TextBlock   Padding="0,50,0,0"
+                             FontSize="15"
+                             TextWrapping="Wrap"
+                             FontFamily="MontSerrat"
+                             Foreground="LightGray">José ha desarrollado una exitosa carrera en  diseño 3D a lo largo
+                de 9 años. Álvaro es una voz autorizada en el mundo de la publicidad y el marketing. </TextBlock>
+                <TextBlock Padding="0,20,0,0"
+                           FontSize="15"
+                           TextWrapping="Wrap"
+                           FontFamily="MontSerrat"
+                           Foreground="LightGray">Tras estudiar
+                    juntos DAM afrontan un nuevo reto y aúnan su "Know-how" para desarrollar una novedosa aplicación
+                    de consultas de base de dato.</TextBlock>
+    
+    
+                
+            </StackPanel>
+            
+            
+        </Grid>
 </Page>

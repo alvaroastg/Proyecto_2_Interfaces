@@ -25,6 +25,8 @@
       <None Remove="Raw\pru.json" />
       <None Remove="Imagenes\crud.png" />
       <Resource Include="Imagenes\crud.png" />
+      <None Remove="Imagenes\acercade.png" />
+      <Resource Include="Imagenes\acercade.png" />
     </ItemGroup>
 
 </Project>

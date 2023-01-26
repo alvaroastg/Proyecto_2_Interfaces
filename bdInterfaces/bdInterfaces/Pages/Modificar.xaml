@@ -42,6 +42,26 @@
         
         <StackPanel Grid.Row="1"
                     Grid.Column="0">
+            
+            <TextBlock Text="Categoría"
+                       Margin="0,15,0,0"
+                       Foreground="{StaticResource Verde}"
+                       FontFamily="Montserrat"
+                       FontWeight="Bold"
+                       FontSize="13"
+                       Width="150"/>
+
+            <ComboBox Width="150"
+                      Height="15"
+                      Margin="0,22,0,0">
+            
+            </ComboBox>
+            
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1"
+                    Grid.Row="0">
+           
             <TextBlock Text="Producto Nuevo"
                        Margin="0,15,0,0"
                        Foreground="{StaticResource Verde}"
@@ -59,30 +79,13 @@
                      FontSize="13"
                      FontFamily="Montserrat"
                      CaretBrush="{StaticResource Verde}" />
-        </StackPanel>
-        
-        <StackPanel Grid.Column="1"
-                    Grid.Row="0">
-           
-                <TextBlock Text="Categoría"
-                           Margin="0,15,0,0"
-                           Foreground="{StaticResource Verde}"
-                           FontFamily="Montserrat"
-                           FontWeight="Bold"
-                           FontSize="13"
-                           Width="150"/>
-
-                <ComboBox Width="150"
-                          Height="15"
-                          Margin="0,22,0,0">
-            
-                </ComboBox>
             </StackPanel>
        
         
         <StackPanel Grid.Column="1"
                     Grid.Row="1"
                     VerticalAlignment="Bottom">
+            
             <Button x:Name="BtnAgregarPro"
                     Margin="0,0,0,6"
                     Content="Modificar"
