@@ -19,14 +19,14 @@
 
     <ItemGroup>
       <None Remove="Imagenes\bd.png" />
-      <Resource Include="Imagenes\bd.png" />
+      <Resource Include="IMG\bd.png" />
       <None Remove="Raw\ejemplo.json" />
       <None Remove="Raw\otro.json" />
       <None Remove="Raw\pru.json" />
       <None Remove="Imagenes\crud.png" />
-      <Resource Include="Imagenes\crud.png" />
+      <Resource Include="IMG\crud.png" />
       <None Remove="Imagenes\acercade.png" />
-      <Resource Include="Imagenes\acercade.png" />
+      <Resource Include="IMG\acercade.png" />
     </ItemGroup>
 
 </Project>

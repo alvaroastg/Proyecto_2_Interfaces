@@ -21,7 +21,7 @@
                        FontFamily="MontSerrat"
                        Foreground="{StaticResource Verde}">BIENVENIDOS A LA BASE DE DATOS NORTHWIND</TextBlock>
             
-            <Image Source="../Imagenes/crud.png"
+            <Image Source="../IMG/crud.png"
                    Margin="0,30,0,0"
                    Width="300"></Image>
             
