@@ -50,7 +50,8 @@
                        FontSize="13"
                        Width="150"/>
 
-            <ComboBox Width="150"
+            <ComboBox x:Name="CbCategoria" 
+                      Width="150"
                       Height="15"
                       Margin="0,22,0,0">
             
@@ -69,6 +70,7 @@
             <Button x:Name="BtnAgregarPro"
                     Margin="0,0,0,6"
                     Content="Agregar"
+                    Click="BtnAgregarPro_OnClick"
                     Foreground="{StaticResource Negro}"
                     FontSize="15"
                     FontFamily="Montserrat"
